@@ -162,7 +162,7 @@ class OcpSolver():
         self.ocp.solver_options.hessian_approx = "GAUSS_NEWTON"
         self.ocp.solver_options.integrator_type = "ERK"
         self.ocp.solver_options.print_level = 0     # Do not print out
-        self.ocp.solver_options.nlp_solver = "SQP_RTI"
+        self.ocp.solver_options.nlp_solver_type = "SQP_RTI"
 
         self.ocp.solver_options.tf = self.T_horizon
 
